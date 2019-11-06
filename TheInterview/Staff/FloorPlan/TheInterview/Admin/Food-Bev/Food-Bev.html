@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="Food-Bev.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food & Beverage</title>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="Food-Bev.js"></script>
+</head>
+
+<body>
+<div class="root">
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Menu 
+    </button>
+    <div class="dropdown-content">
+      <a href="../Check-In/Check-In.html">Check-In</a>
+      <a href="#">Food & Beverage</a>
+      <a href="../FloorPlan/FloorPlan.html">Floor Plan</a>
+    </div>
+  </div> 
+</div>
+
+<div>   
+  <div class="form">
+    <p>
+    Interviewer:<br>
+    <input type="text" id="int" placeholder="Last, First">
+    </p>
+    <p>
+    Dietary Restriction:<br>
+    <select name="diet" form="dietform" id="dietres">
+      <option value="None">None</option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="Vegan">Vegan</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="addRow()">Submit</button>
+  </div>
+
+  <div class="parent">
+  <div class="scrollable">
+    <table id="inventory" style="width: 100%">
+      <thead>
+        <tr>
+         <th>Dietary Restrictions</th>
+         <th>Interviewer</th>
+        </tr>
+      </thead>
+      <tbody id="food"></tbody>
+    </table>
+  </div>
+  </div>
+</div>
+</div>
+
+<script src="Food-Bev.js"></script>
+</body>
+
+</html>
